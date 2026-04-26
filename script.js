@@ -7,6 +7,17 @@ if (window.lucide) {
     lucide.createIcons();
 }
 
+// AOS : animations au scroll
+if (window.AOS) {
+    AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 60,
+        delay: 0
+    });
+}
+
 // Swiper : carrousel des aperçus
 if (window.Swiper) {
     new Swiper('.showcase-swiper', {
