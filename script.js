@@ -83,8 +83,8 @@ const navOverlay = document.getElementById('navOverlay');
 const closeMenu = () => {
     burger.classList.remove('open');
     navLinks.classList.remove('open');
-    navOverlay.classList.remove('active');
-    document.body.style.overflow = '';
+    document.body.classList.remove('nav-open');
+    if (navOverlay) navOverlay.classList.remove('active');
 };
 
 const toggleMenu = () => {
@@ -94,8 +94,8 @@ const toggleMenu = () => {
     } else {
         burger.classList.add('open');
         navLinks.classList.add('open');
-        navOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('nav-open');
+        if (navOverlay) navOverlay.classList.add('active');
     }
 };
 
@@ -104,7 +104,7 @@ burger.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); }
 });
 
-navOverlay.addEventListener('click', closeMenu);
+if (navOverlay) navOverlay.addEventListener('click', closeMenu);
 
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);

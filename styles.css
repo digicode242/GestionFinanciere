@@ -239,6 +239,8 @@ section { padding: 100px 0; }
 }
 .nav-overlay.active { display: block; }
 
+body.nav-open { overflow: hidden; touch-action: none; }
+
 /* =====================================================
    HERO
    ===================================================== */
@@ -1033,7 +1035,7 @@ section { padding: 100px 0; }
 
     .nav-links {
         position: fixed;
-        top: 0; right: -100%;
+        top: 0; right: 0;
         width: 78%; max-width: 320px;
         height: 100vh;
         background: var(--white);
@@ -1041,12 +1043,13 @@ section { padding: 100px 0; }
         justify-content: flex-start;
         gap: 20px;
         box-shadow: -4px 0 24px rgba(0,0,0,0.18);
-        transition: right var(--transition);
+        transform: translateX(100%);
+        transition: transform var(--transition);
         padding: 90px 36px 40px;
         overflow-y: auto;
         z-index: 1050;
     }
-    .nav-links.open { right: 0; }
+    .nav-links.open { transform: translateX(0); }
     .nav-links a:not(.btn) {
         color: var(--primary);
         font-size: 1.05rem;
