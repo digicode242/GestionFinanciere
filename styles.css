@@ -1073,7 +1073,7 @@ section { padding: 100px 0; }
 @media (max-width: 480px) {
     .container, .nav-container { padding: 0 18px; }
     .hero h1 { font-size: 1.8rem; }
-    .hero-buttons { flex-direction: column; align-items: stretch; }
+    .hero-buttons { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 12px; }
     .btn { justify-content: center; }
     .showcase-swiper .swiper-button-prev,
     .showcase-swiper .swiper-button-next { display: none; }
