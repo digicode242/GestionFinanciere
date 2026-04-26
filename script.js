@@ -7,16 +7,6 @@ if (window.lucide) {
     lucide.createIcons();
 }
 
-// AOS : animations au scroll
-if (window.AOS) {
-    AOS.init({
-        duration: 800,
-        easing: 'ease-out-cubic',
-        once: true,
-        offset: 80
-    });
-}
-
 // Swiper : carrousel des aperçus
 if (window.Swiper) {
     new Swiper('.showcase-swiper', {
