@@ -228,6 +228,19 @@ section { padding: 100px 0; }
 .burger.open span:nth-child(2) { opacity: 0; }
 .burger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
+/* Overlay fond sombre menu mobile */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1040;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+.nav-overlay.active { display: block; }
+
 /* =====================================================
    HERO
    ===================================================== */
@@ -935,6 +948,7 @@ section { padding: 100px 0; }
     transform: translateY(-3px);
 }
 .footer-socials [data-lucide] { width: 18px; height: 18px; }
+.footer-socials .fa-brands { font-size: 17px; line-height: 1; }
 
 .footer-col h5 {
     font-size: 1rem;
@@ -1026,11 +1040,13 @@ section { padding: 100px 0; }
         height: 100vh;
         background: var(--white);
         flex-direction: column;
-        justify-content: center;
-        gap: 24px;
-        box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+        justify-content: flex-start;
+        gap: 20px;
+        box-shadow: -4px 0 24px rgba(0,0,0,0.18);
         transition: right var(--transition);
-        padding: 40px;
+        padding: 90px 36px 40px;
+        overflow-y: auto;
+        z-index: 1050;
     }
     .nav-links.open { right: 0; }
     .nav-links a:not(.btn) {
@@ -1046,8 +1062,9 @@ section { padding: 100px 0; }
     .card-balance { left: 10px; }
     .card-budget { right: 10px; }
 
-    .stats { grid-template-columns: 1fr; gap: 20px; max-width: 280px; text-align: center; }
+    .stats { grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: 100%; text-align: center; }
     .stat { text-align: center; }
+    .stat-number { font-size: 1.5rem; }
 
     .section-title { font-size: 1.7rem; }
 
