@@ -234,7 +234,7 @@ section { padding: 100px 0; }
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.45);
-    z-index: 1040;
+    z-index: 999;
     cursor: pointer;
 }
 .nav-overlay.active { display: block; }
@@ -1047,7 +1047,6 @@ body.nav-open { overflow: hidden; }
         transition: transform var(--transition);
         padding: 90px 36px 40px;
         overflow-y: auto;
-        z-index: 1050;
     }
     .nav-links.open { transform: translateX(0); }
     .nav-links a:not(.btn) {
