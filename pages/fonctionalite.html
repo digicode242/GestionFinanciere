@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonctionnalités — FinÉtu</title>
+    <meta name="description" content="Découvrez toutes les fonctionnalités de FinÉtu pour gérer vos finances étudiantes." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- AOS : animations au scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Styles du site -->
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="wallet" class="logo-icon"></i>
+                Fin<span>Étu</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="fonctionalite.html">Fonctionnalités</a></li>
+                <li><a href="index.html#apercu">Aperçu</a></li>
+                <li><a href="index.html#apropos">À propos</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary btn-sm">Découvrir</a></li>
+            </ul>
+
+            <div class="burger" id="burger" aria-label="Menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg-shapes" aria-hidden="true">
+            <span class="shape shape-1"></span>
+            <span class="shape shape-2"></span>
+            <span class="shape shape-3"></span>
+        </div>
+
+        <div class="container hero-grid">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="900">
+                <h1>Découvrez nos <span class="text-accent">fonctionnalités</span></h1>
+                <p>Tout ce qu'il faut pour gérer vos finances étudiantes efficacement et simplement.</p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i data-lucide="rocket"></i> Commencer gratuitement
+                    </a>
+                    <a href="#fonctionnalites" class="btn btn-outline">
+                        <i data-lucide="play-circle"></i> En savoir plus
+                    </a>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="500" data-suffix="+">0</span>
+                        <span class="stat-label">étudiants inscrits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5" data-suffix="">0</span>
+                        <span class="stat-label">fonctionnalités clés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100" data-suffix="%">0</span>
+                        <span class="stat-label">gratuit</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-illustration" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+                <div class="hero-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=900&q=80"
+                         alt="Étudiant gérant ses finances sur ordinateur" loading="lazy" />
+                    <div class="floating-card card-balance">
+                        <div class="fc-icon"><i data-lucide="trending-up"></i></div>
+                        <div>
+                            <p class="fc-label">Épargne ce mois</p>
+                            <p class="fc-value">+ 82 500 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-budget">
+                        <div class="fc-icon fc-icon-alt"><i data-lucide="pie-chart"></i></div>
+                        <div>
+                            <p class="fc-label">Budget restant</p>
+                            <p class="fc-value">68%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FONCTIONNALITÉS ===================== -->
+    <section class="features" id="fonctionnalites">
+        <div class="container">
+            <span class="eyebrow" data-aos="fade-up">Fonctionnalités</span>
+            <h2 class="section-title" data-aos="fade-up">Tout ce dont vous avez besoin</h2>
+            <p class="section-subtitle" data-aos="fade-up">5 outils pensés pour la vie étudiante</p>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon"><i data-lucide="layout-dashboard"></i></div>
+                    <h3>Tableau de bord</h3>
+                    <p>Visualisez vos finances en temps réel grâce à des graphiques clairs et interactifs.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i data-lucide="wallet-cards"></i></div>
+                    <h3>Gestion de budget</h3>
+                    <p>Créez vos catégories personnalisées et recevez des alertes avant de dépasser vos plafonds.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i data-lucide="line-chart"></i></div>
+                    <h3>Simulateur d'investissement</h3>
+                    <p>Calculez la croissance de votre épargne en FCFA grâce aux intérêts composés sur 1, 3 ou 5 ans.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i data-lucide="compass"></i></div>
+                    <h3>Catalogue d'opportunités</h3>
+                    <p>Livrets d'épargne, tontines digitales et micro-investissements adaptés au marché sénégalais.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i data-lucide="target"></i></div>
+                    <h3>Objectifs d'épargne</h3>
+                    <p>Définissez vos projets (voyage, ordinateur…) et suivez votre progression visuellement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html#accueil" class="logo logo-footer">
+                    <i data-lucide="wallet" class="logo-icon"></i>
+                    Fin<span>Étu</span>
+                </a>
+                <p class="footer-tagline">Gérez votre argent étudiant, simplement.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="fonctionalite.html">Fonctionnalités</a></li>
+                    <li><a href="index.html#apercu">Aperçu</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><i data-lucide="mail"></i> contact@finetu.sn</li>
+                    <li><i data-lucide="phone"></i> +221 78 524 08 79</li>
+                    <li><i data-lucide="map-pin"></i> Dakar, Sénégal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 FinÉtu — Projet universitaire · Sénégal. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script principal -->
+    <script src="../script.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init();
+    </script>
+</body>
+</html>
