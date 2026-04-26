@@ -2,12 +2,7 @@
 
 > Site vitrine moderne pour **FinÉtu**, une application de gestion financière pensée pour les étudiants sénégalais.
 
-![Stack](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Status](https://img.shields.io/badge/status-projet%20universitaire-4ABFA5)
 
----
 
 ## Sommaire
 - [À propos](#-à-propos)
@@ -71,12 +66,11 @@ GestionFinanciereEtudiant/
 ├── styles.css              # Tous les styles
 ├── script.js               # Logique JavaScript (validation, animations, carrousels)
 ├── README.md               # Ce fichier
-└── resources/
-    └── images/             # Photos de l'équipe et illustrations
-        ├── ANTA DIOP.jpeg
-        ├── Dior Dieng.jpeg
-        ├── NDEYE MATY DIOUF.jpeg
-        └── MOULOUNDOU KIMBASSA MARDOCHE.jpeg
+└── images/                 # Photos de l'équipe et illustrations
+    ├── ANTA DIOP.jpeg
+    ├── Dior Dieng.jpeg
+    ├── NDEYE MATY DIOUF.jpeg
+    └── MOULOUNDOU KIMBASSA MARDOCHE.jpeg
 ```
 
 ---
@@ -107,10 +101,10 @@ Puis ouvrez [http://localhost:8000](http://localhost:8000) dans votre navigateur
 ## Personnalisation
 
 ### Ajouter / remplacer des images
-1. Placez vos fichiers dans `resources/images/`.
+1. Placez vos fichiers dans `images/`.
 2. Référencez-les dans `index.html` :
    ```html
-   <img src="resources/images/votre-image.jpg" alt="Description" />
+   <img src="images/votre-image.jpg" alt="Description" />
    ```
 
 ### Modifier les couleurs
